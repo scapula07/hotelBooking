@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import CheckDate from '../CheckDate'
 
 
@@ -52,10 +53,13 @@ export default function Checkout({hotel}) {
             <h5 className='text-sm font-semibold'> {hotel?.price}</h5>
 
         </div>
-        <button 
-         className='w-full bg-blue-600 py-2 rounded-lg text-white font-semibold'
-         onClick={()=>setAdded(true)}
-        >Checkout</button>
+        <Link to="/payment">
+          <button 
+          className='w-full bg-green-600 py-2 rounded-lg text-white font-semibold'
+          onClick={()=>setAdded(true)}
+          >Checkout</button>
+        </Link>
+       
 
      </div>
 </div>

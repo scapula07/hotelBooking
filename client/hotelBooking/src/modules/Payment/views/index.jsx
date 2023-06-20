@@ -10,7 +10,7 @@ import Paypal from './paypal';
 
 
 export default function PaymentView({options,stripePromise}) {
-    const [method,selectMethod]=useState("Stripe")
+    const [method,selectMethod]=useState("Paystack")
   return (
     <Elements stripe={stripePromise} options={options} >
     <div className='flex w-full justify-center items-center h-screen'>

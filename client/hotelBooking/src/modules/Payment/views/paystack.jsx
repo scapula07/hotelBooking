@@ -54,8 +54,10 @@ export default function Paystack({name,}) {
               </div>
   
           </div>
-  
-         <PaystackButton {...componentProps}/>
+         <button className='bg-green-500 text-white w-full rounded-lg py-2'>
+           <PaystackButton {...componentProps}/>
+         </button>
+        
   
       </div>
 
